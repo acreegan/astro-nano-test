@@ -18,17 +18,17 @@ import avatarImage from "./avatar.png";
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <Picture src={avatarImage} alt="A photograph of Andrew Creegan" class="max-w-3xs"></Picture>
-    <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, welcome to Andrew Creegan's website
-    </h4>
     <div class="space-y-16">
-      <section>
-        <article class="space-y-4">
+      <section class="flex flex-wrap justify-center gap-6">
+        <Picture src={avatarImage} alt="A photograph of Andrew Creegan" class="animate max-w-3xs rounded-full flex-1 mt-8"></Picture>
+        <article class="space-y-4 flex-1">
+          <h4 class="animate font-semibold text-black dark:text-white">
+            Biography
+          </h4>
           <p class="animate">
           I am a mechatronics and biomedical engineer with a love for all kinds of making and measuring.  
           After 8 years of experience in industry, I went on to complete my PhD in bioengineering and am now looking 
-          for a role where I can make a difference. My experience has given me a combination of the cross-disciplinary 
+          for a role where I can make a positive impact on the world. My experience has given me a combination of the cross-disciplinary 
           skills needed to succeed in the world of startups and the rigorous approach needed for scientific research.
           </p>
 
@@ -44,9 +44,10 @@ import avatarImage from "./avatar.png";
             See all posts
           </Link>
         </div>
-        <ul class="flex flex-wrap gap-4">
+        <!-- I actually want a masonry layout here.. -->
+        <ul class="columns-1 md:columns-3 gap-4 space-y-4">
           {blog.map(post => (
-            <li>
+            <li class="break-inside-avoid">
               <ArrowCard entry={post} />
             </li>
           ))}
@@ -55,12 +56,11 @@ import avatarImage from "./avatar.png";
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Contact
         </h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            If you want to get in touch, you can contact me on social media or by email.
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">

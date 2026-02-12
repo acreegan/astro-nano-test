@@ -2,8 +2,8 @@
 title: "Getting started"
 description: "Hit the ground running."
 date: "Mar 22 2024"
-image: 
-  url: "/astro-sphere.jpg"
+thumbnail: 
+  src: "./astro-sphere.jpg"
   alt: "hello"
 ---
 

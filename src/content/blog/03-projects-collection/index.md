@@ -1,6 +1,6 @@
 ---
 title: "Projects Collection"
-description: "How to add projects to your portfolio."
+description: "How to add projects to your portfolio. And this blog post has a very long description. It would be silly to include the whole thing on a preview card. Good thing we can use the line-clamp function in tailwind."
 date: "Mar 20 2024"
 ---
 
