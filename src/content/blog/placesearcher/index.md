@@ -1,6 +1,6 @@
 ---
 title: Placesearcher
-summary: A data science project
+description: A data science project
 tags:
 date: "2021-02-01"
 thumbnail:
